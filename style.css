@@ -28,7 +28,7 @@ body{
 }
 
 i{
-    font-size: 7.5 em;
+    font-size: 7.5em;
     color: #9a0b0e;
     border: 5px solid transparent;
     outline: 3px solid #9a0b0e;
@@ -54,7 +54,7 @@ button{
     width: 150px;
     height: inherit;
     font-size: 1.2em;
-    color: #9a0b0e;
+    color: #f2e3e4;
     border-radius: 30px;
     border: 2px solid #9a0b0e;
     outline: none;
@@ -64,7 +64,7 @@ button{
 
 button:nth-child(1){
     margin-left: -200px;
-    background: #f2e3e4;
+    background: #9a0b0e;
 }
 
 button:nth-child(2){
