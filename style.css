@@ -38,9 +38,10 @@ i {
     border: 5px solid transparent;
     outline: 5px solid #9a0b0e;
     border-radius: 50%;
-    width: 1.3em;
-    height: 1.3em;
+    width: 2em;
+    height: 2em;
     margin-bottom: 20px;
+    line-height: 1;
 }
 
 h2 {
