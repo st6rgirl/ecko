@@ -22,26 +22,26 @@ body {
     background: #f2e3e4;
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
 i {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 7.5em;
+    font-size: 6em; /* Adjusted size to fit well */
     color: #9a0b0e;
-    border: 5px solid transparent;
-    outline: 5px solid #9a0b0e;
+    border: 5px solid #9a0b0e;
     border-radius: 50%;
-    width: 2em;
-    height: 2em;
+    width: 150px; /* Ensures circle is proportional */
+    height: 150px; /* Ensures circle is proportional */
     margin-bottom: 20px;
-    line-height: 1;
+    box-sizing: border-box; /* Ensures consistent dimensions */
 }
 
 h2 {
@@ -52,17 +52,16 @@ h2 {
 }
 
 .btn-group {
-    width: 100%;
-    height: 40px;
     display: flex;
-    justify-content: center;
-    margin-top: 15px;
+    justify-content: space-between;
+    gap: 20px; /* Adds spacing between buttons */
+    margin-top: 20px;
 }
 
 button {
-    position: absolute;
+    position: relative;
     width: 150px;
-    height: inherit;
+    height: 40px;
     font-size: 1.2em;
     color: #f2e3e4;
     font-weight: 600;
@@ -71,6 +70,8 @@ button {
     outline: none;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    background: #9a0b0e;
+    transition: all 0.2s ease-in-out;
 }
 
 button:nth-child(1) {
@@ -86,4 +87,8 @@ button:nth-child(2) {
 button.no-btn {
     background-color: #f2e3e4;
     color: #9a0b0e;
+}
+
+button:hover {
+    transform: scale(1.05); /* Adds a slight hover effect */
 }
